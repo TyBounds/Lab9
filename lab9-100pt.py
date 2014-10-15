@@ -13,3 +13,11 @@
 # - A temperature of over 105F
 # - A temperature of over 102F and they have been sick in the last 24 hours
 # - A temperature over 100, OR they've been sick in the last 24 hours, AND they've recently travelled to West Africa.
+
+
+checktemp = 0
+while checktemp == 0:
+    print 'Have you bee sick in the last 24 hours?'
+    userInput = raw_input()
+    if userInput == "yes":
+      
