@@ -15,9 +15,19 @@
 # - A temperature over 100, OR they've been sick in the last 24 hours, AND they've recently travelled to West Africa.
 
 
-checktemp = 0
-while checktemp == 0:
-    print 'Have you bee sick in the last 24 hours?'
-    userInput = raw_input()
-    if userInput == "yes":
-      
+
+print 'What is your tempurature?'
+userInput = int(raw_input())
+print 'Have you been sick lately?'
+userInput2 = raw_input()
+print 'Have you been to Africa Lately?'
+userInput3 = raw_input()
+    
+if userInput >= 105:
+    print 'Go to the hospital'
+else:
+        if userInput2 == "yes" and userInput >= 102:
+            print 'Go to the hospital'
+        else:
+            if (userInput > 105 or userInput2 == 'yes') and userInput3 == 'yes':
+                print "Your fine go home'
